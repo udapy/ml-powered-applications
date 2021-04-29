@@ -1,0 +1,43 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: jupyter-client
+    versions:
+    - 6.1.11
+    - 6.1.12
+    - 6.1.13
+  - dependency-name: matplotlib
+    versions:
+    - 3.3.4
+    - 3.4.0
+  - dependency-name: jupyter-console
+    versions:
+    - 6.2.0
+    - 6.3.0
+  - dependency-name: pillow
+    versions:
+    - 8.1.0
+    - 8.1.1
+    - 8.1.2
+  - dependency-name: tqdm
+    versions:
+    - 4.56.0
+    - 4.56.1
+    - 4.56.2
+    - 4.57.0
+    - 4.58.0
+    - 4.59.0
+  - dependency-name: pandas
+    versions:
+    - 1.2.1
+    - 1.2.2
+    - 1.2.3
+  - dependency-name: pytest
+    versions:
+    - 6.2.2
